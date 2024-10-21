@@ -2,7 +2,7 @@
   "name": "react-intro",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://fannarjack.github.io/React-intro",
+  "homepage": "https://fannarjack.github.io/React-intro/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
