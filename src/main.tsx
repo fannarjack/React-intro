@@ -6,6 +6,5 @@ import Btn from './hamburger.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Btn />
-    <Btn />
   </StrictMode>,
 )
