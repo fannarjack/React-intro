@@ -1,15 +1,17 @@
 import "./hamburger.css"
-function Btn() {
-
-  return(
-  <div className="container">
-    <button className="btn">
-      Hey, how are you?
-      good
-    </button>
-  </div>
-  )
+type Props = {
+  answer: string;
   
 }
 
-export default Btn
+function Btn({answer}: Props) {
+  return(
+  <div className="container">
+    <button className="btn" >
+      {answer}
+    </button>
+  </div>
+  )
+}
+
+export default Btn  

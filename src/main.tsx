@@ -5,6 +5,7 @@ import Btn from './hamburger.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Btn />
+    <Btn answer='Hey, how are you?'/>
+    <Btn answer='another button'/>
   </StrictMode>,
 )
