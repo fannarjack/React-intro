@@ -1,0 +1,39 @@
+.modal-container{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0);
+  
+  backdrop-filter: blur(20px);
+}
+.modal{
+  padding: 24px;
+  width: 250px;
+  height: 250px;
+  background-color: aliceblue;
+  border-radius: 16px;
+  animation:ease-in-out 3s ;
+}
+.hello{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal p{
+  font-size: 36px;
+}
+.x{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  
+}
+.x:hover{
+cursor: pointer;
+}

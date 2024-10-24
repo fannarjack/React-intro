@@ -1,4 +1,5 @@
 .btn{
+
  display: flex;
  border: none;
  border-radius: 45px;
@@ -10,7 +11,7 @@
  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
  transition: all 0.3s ease 0s;
 }
-.btn:hover{
+/*.btn:hover{
   cursor: pointer;
   background-color:#2EE59D;
   color: white;
@@ -18,12 +19,13 @@
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   transform: translateY(-7px);
 }
-.btn:active{
-  background-color: aliceblue;
+  */
+  
+/*.btn:active{
   color: black;
   transition: none;
   background-color: white;
-}
+}*/
 .container{
   display: flex;
   justify-content: center;
