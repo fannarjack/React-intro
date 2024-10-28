@@ -1,0 +1,40 @@
+.movie-container{
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+}
+/*----- mynd,title og overview -----*/
+.movie-info{
+  border-bottom: 0.5px solid gray;
+  margin: 30px 10px 30px 10px;
+}
+.title{
+  margin-top: 20px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+}
+.movie-img{
+  display: block;
+  margin: 50px auto 10px auto;
+}
+.overview{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin: 50px 30px 50px 30px
+}
+/*----- button -----*/
+.btn{
+  font-size: 16px;
+  display: block;
+  margin: 50px auto 50px auto;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.btn:active{
+  background-color: aliceblue;
+  transition: none;
+  transform: translateY(-2px);
+}
