@@ -1,4 +1,4 @@
-import "./name.css"
+import {NameContainer, Names} from "./Name.style.tsx"
 
 
 type Props = {
@@ -10,13 +10,18 @@ type Props = {
 
 function Name({firstName, secondName, familyName, lastName}: Props){
   return(
-    <div className="nav-container">
-      <div>{firstName}</div>
-      <div>{secondName}</div>
-      <div>{familyName}</div>
-      <div>{lastName}</div>
-    </div>
+    <NameContainer className="nav-container">
+      <Names>{firstName}</Names>
+      <Names>{secondName}</Names>
+      <Names>{familyName}</Names>
+      <Names>{lastName}</Names>
+    </NameContainer>
   )
 
 }
 export default Name
+/*
+      <div>{secondName}</div>
+      <div>{familyName}</div>
+      <div>{lastName}</div>
+*/

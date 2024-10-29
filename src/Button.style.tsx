@@ -1,5 +1,6 @@
-.btn{
+import styled from "styled-components"
 
+const Button = styled.button`
  display: flex;
  border: none;
  border-radius: 45px;
@@ -10,27 +11,15 @@
  font-size: 24px;
  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
  transition: all 0.3s ease 0s;
-}
-/*.btn:hover{
-  cursor: pointer;
-  background-color:#2EE59D;
-  color: white;
-  border-color: green;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  transform: translateY(-7px);
-}
-  */
-  
-/*.btn:active{
-  color: black;
-  transition: none;
-  background-color: white;
-}*/
-.container{
+`
+
+const Container = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 50vh;
   margin-bottom: 50px;
-}
+`
+
+export {Button, Container}

@@ -1,16 +1,9 @@
-import "./modal.css"
+
 import Name from "./name.tsx"
-
-
-
-
 import MovieDetails from "./movieDetails.tsx"
 
 function App(){
   
-
-
-
   return (
     <>
       <Name 
@@ -19,8 +12,6 @@ function App(){
       familyName='Jack'
       lastName='Hilmarsson'/>
       <MovieDetails/>
-      
-      
     </>
   )
 } 

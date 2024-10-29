@@ -1,8 +1,9 @@
 
 import { MouseEventHandler } from "react";
-import "./modal.css"
+//import "./modal.css"
 import { useState, useEffect } from "react";
 import GoodOrBad from "./movieReview";
+import {Container, ModalPopUp, Close, ReviewComment} from "./Modal.style.tsx"
 
 type Review = {
   content: string
@@ -56,25 +57,25 @@ function Modal({isOpen, closeModal, movieId}: Props){
   
   return (
     <>
-    <div className="modal-container" style = {style}>
-      <div className="modal">
-        <p className="x" onClick = {closeModal}>X</p>
+    <Container className="modal-container" style = {style}>
+      <ModalPopUp className="modal">
+        <Close className="x" onClick = {closeModal}>X</Close>
         
         {review.map((review, index) =>{
           console.log(sentiments[index])
           return(
-            <p
+            <ReviewComment
               key={index}
               style={{ color: sentiments[index] === "POSITIVE" ? "green" : "red"}}
               className="hello"
             >
                 {review.content}
-            </p>
+            </ReviewComment>
         )
         })}
 
-       </div>
-    </div>
+       </ModalPopUp>
+    </Container>
     </>
   )
 } 

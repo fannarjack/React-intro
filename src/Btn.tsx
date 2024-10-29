@@ -1,5 +1,6 @@
-import "./Btn.css"
+
 import { MouseEventHandler, useState } from "react";
+import {Button, Container} from "./Button.style"
 
 type Props = {
   answer: string; 
@@ -31,8 +32,8 @@ function Btn({answer, click}: Props) {
     btnStyle = {...btnStyle, ...activeStyle}
   }
   return(
-  <div className="container">
-    <button className="btn" 
+  <Container>
+    <Button  
     style = {btnStyle}
     onMouseEnter ={() => setIsGreen(true)}
     onMouseLeave ={() => setIsGreen(false)}
@@ -41,8 +42,8 @@ function Btn({answer, click}: Props) {
     onClick = {click}
     >
       {answer}
-    </button>
-  </div>
+    </Button>
+  </Container>
   )
 }
 

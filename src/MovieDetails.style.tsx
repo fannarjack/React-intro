@@ -1,40 +1,33 @@
-.movie-container{
+import styled from "styled-components"
+
+const MovieContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Roboto";
-}
+`
 /*----- mynd,title og overview -----*/
-.movie-info{
+
+const MovieInfo = styled.div`
   border-bottom: 0.5px solid gray;
   margin: 30px 10px 30px 10px;
-}
-.title{
+`
+
+const Title = styled.h1`
   margin-top: 20px;
   font-size: 36px;
   display: flex;
   justify-content: center;
-}
-.movie-img{
+`
+
+const MovieImg = styled.img`
   display: block;
   margin: 50px auto 10px auto;
-}
-.overview{
+`
+const Overview = styled.h2`
   display: flex;
   justify-content: center;
   font-size: 18px;
   margin: 50px 30px 50px 30px
-}
-/*----- button -----*/
-.btn{
-  font-size: 16px;
-  display: block;
-  margin: 50px auto 50px auto;
-}
-.btn:hover{
-  cursor: pointer;
-}
-.btn:active{
-  background-color: aliceblue;
-  transition: none;
-  transform: translateY(-2px);
-}
+`
+
+export {MovieContainer, MovieInfo, Title, MovieImg, Overview}

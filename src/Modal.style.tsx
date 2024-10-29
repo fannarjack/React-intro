@@ -1,14 +1,16 @@
-.modal-container{
+import styled from "styled-components"
+
+const Container = styled.div`
   position: fixed;
   margin: auto;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(128, 128, 128, 0);
-  
   backdrop-filter: blur(20px);
-}
-.modal{
+`
+
+const ModalPopUp = styled.div`
   position:fixed;
   top: 50%;
   left: 50%;
@@ -20,9 +22,22 @@
   border-radius: 16px;
   overflow: scroll;
   animation:ease-in-out 3s ;
-  
-}
-.hello{
+`
+
+const Close = styled.p`
+  align-items: end;
+  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  &:hover{
+    cursor: pointer;
+  }
+`
+
+const ReviewComment = styled.p`
   width: 100%;
   height: auto;
   display: flex;
@@ -33,17 +48,5 @@
   border-bottom: 0.5px solid gray;
   padding-bottom: 60px;
   line-height: 1.5;
-}
-
-.x{
-  align-items: end;
-  width: 30px;
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 10px;
-  font-size: 24px;
-  font-weight: 600;
-}
-.x:hover{
-cursor: pointer;
-}
+`
+export {Container, ModalPopUp, Close, ReviewComment}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import "./movieDetails.css"
 import Btn from "./Btn.tsx";
 import Modal from "./modal.tsx";
+import {MovieContainer, MovieInfo, Title, MovieImg, Overview} from "./MovieDetails.style.tsx"
 
 type Movie = {
   title: string,
@@ -35,14 +35,14 @@ function MovieDetails(){
 
   return (
     <>
-      <div className="movie-container">
+      <MovieContainer >
         {movieOpen.map((movieOpen, index) =>{
 
           return (
-            <div className="movie-info">
-              <h1 className="title">{movieOpen.title}</h1>
-              <img className="movie-img" src={"https://image.tmdb.org/t/p/w500/" + movieOpen.backdrop_path} />
-              <h2 className="overview">{movieOpen.overview}</h2>
+            <MovieInfo className="movie-info">
+              <Title className="title">{movieOpen.title}</Title>
+              <MovieImg className="movie-img" src={"https://image.tmdb.org/t/p/w500/" + movieOpen.backdrop_path} />
+              <Overview className="overview">{movieOpen.overview}</Overview>
               <Btn answer="Show Review" click={() => {
                 const newModalOpen = [...modalOpen]
                 newModalOpen[index] = true;
@@ -54,11 +54,11 @@ function MovieDetails(){
                 setModalOpen(newModalOpen)}}
                 movieId={movieOpen.id}/>
 
-            </div>
+            </MovieInfo>
             
           )     
         })}
-      </div>
+      </MovieContainer>
     </>
   
   )
