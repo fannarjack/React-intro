@@ -1,6 +1,6 @@
 import {NameContainer, Names} from "./Name.style.tsx"
 
-
+//I can put what ever i want in these names
 type Props = {
   firstName: string;
   secondName: string;
@@ -10,7 +10,7 @@ type Props = {
 
 function Name({firstName, secondName, familyName, lastName}: Props){
   return(
-    <NameContainer className="nav-container">
+    <NameContainer>
       <Names>{firstName}</Names>
       <Names>{secondName}</Names>
       <Names>{familyName}</Names>
@@ -20,8 +20,3 @@ function Name({firstName, secondName, familyName, lastName}: Props){
 
 }
 export default Name
-/*
-      <div>{secondName}</div>
-      <div>{familyName}</div>
-      <div>{lastName}</div>
-*/

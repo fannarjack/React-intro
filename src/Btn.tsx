@@ -3,12 +3,14 @@ import { MouseEventHandler, useState } from "react";
 import {Button, Container} from "./Button.style"
 
 type Props = {
+  //Can put whatever i want in the answer
   answer: string; 
   click: MouseEventHandler<HTMLButtonElement>;
 }
 
 
 function Btn({answer, click}: Props) {
+  
   const [isGreen, setIsGreen] = useState(false);
   const [isActive, setIsActive] = useState(false)
   const hoverStyle = {
@@ -25,9 +27,11 @@ function Btn({answer, click}: Props) {
     backgroundColor: "white"
   }
   let btnStyle = {}
+  //if hoverStyle is true
   if(isGreen){
     btnStyle = hoverStyle;
   }
+  //if activeStyle is true
   if(isActive){
     btnStyle = {...btnStyle, ...activeStyle}
   }

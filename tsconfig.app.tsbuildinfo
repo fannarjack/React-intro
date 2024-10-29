@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/btn.tsx","./src/main.tsx","./src/modal.tsx","./src/moviedetails.tsx","./src/moviereview.tsx","./src/name.tsx","./src/vite-env.d.ts"],"version":"5.6.3"}
+{"root":["./src/app.tsx","./src/btn.tsx","./src/button.style.tsx","./src/modal.style.tsx","./src/moviedetails.style.tsx","./src/name.style.tsx","./src/main.tsx","./src/modal.tsx","./src/moviedetails.tsx","./src/moviereview.tsx","./src/name.tsx","./src/vite-env.d.ts"],"version":"5.6.3"}
